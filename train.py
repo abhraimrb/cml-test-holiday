@@ -43,11 +43,11 @@ preprocessor = ColumnTransformer(transformers = [
         ], remainder = SimpleImputer(strategy = 'most_frequent')
     )
 # Fit a model
-n_estimators =  100
+n_estimators =  200
 
 min_samples_split =  2
 
-min_samples_leaf  =  2
+min_samples_leaf  =  3
 
 rf_model = RandomForestClassifier( n_estimators = n_estimators, min_samples_split = min_samples_split, 
                                    min_samples_leaf = min_samples_leaf, class_weight = 'balanced')
