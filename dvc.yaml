@@ -5,8 +5,5 @@ stages:
     - data
     - train.py
     metrics:
-    - metrics.json:
-        cache: false
-    plots:
-    - loss.csv:
+    - metrics.txt:
         cache: false
